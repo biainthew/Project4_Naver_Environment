@@ -1,0 +1,40 @@
+@mixin btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    &:hover{
+        background: #0dcb67;
+    }
+}
+@mixin graph-year {
+    position: absolute;
+    color: #fff;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin scrollE {
+    position: relative;
+    top: 100px;
+}
+@mixin largeTitle {
+    font-size: 52px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 0 1px #000;
+}
+@mixin mediumTitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 0 0 1px #000;
+}
+@mixin smallTitle {
+    
+}
+@mixin boxShadow {
+    box-shadow: 0 0 30px #e0e0e0;
+    border-radius: 20px;
+}
