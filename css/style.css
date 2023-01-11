@@ -18,7 +18,7 @@ body {
 }
 
 #nav {
-  width: 100%;
+  width: 800px;
   height: 58px;
 }
 
@@ -56,7 +56,9 @@ body {
 
 .nav {
   position: absolute;
-  z-index: 9998;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
 }
 .nav-ul {
   height: 100%;

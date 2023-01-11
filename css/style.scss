@@ -21,7 +21,7 @@ font-family:'NanumSquare',san-serif;
     height: 58px;
 }
 #nav{
-    width: 100%;
+    width: 800px;
     height: 58px;
 }
 #main{
@@ -64,7 +64,9 @@ font-family:'NanumSquare',san-serif;
 }
 .nav{
     position: absolute;
-    z-index: 9998;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
     &-ul{
         height: 100%;
         display: flex;
