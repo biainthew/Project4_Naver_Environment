@@ -114,6 +114,11 @@ $(window).scroll(function(){
 
         //graph bottom text
         $('.graph-wrap-bottomt').css('opacity',0).stop().delay(1500).animate({opacity:1},500)   
+    }else if(($(document).scrollTop()<$('.main-sec2').offset().top)){
+        $('.graph-wrap-number').css('opacity', 0)
+    }else{
+        $('.number1 .number-wrap').css({top:'-648px'})
+        $('.number2 .number-wrap').css({top:'-972px'})
     }
 });
 
@@ -149,7 +154,7 @@ $(window).scroll(function(){
     }
 })
 $(window).scroll(function(){
-    if($(document).scrollTop()>2380){
+    if($(document).scrollTop()<2380){
         $('.main-sec4-left-wrap .number-wrap1').css('top',0).stop().animate({top:'-162px'},3000,'easeInOutCubic');
         $('.main-sec4-left-wrap .number-wrap2').css('top',0).stop().animate({top:'-729px'},3000,'easeInOutCubic');
         $('.main-sec4-right-wrap1 .number-wrap3').css('top',0).stop().animate({top:'-162px'},3000,'easeInOutCubic');
@@ -160,10 +165,10 @@ $(window).scroll(function(){
     }else{
         $('.main-sec4-left-wrap .number-wrap1').css('top','-162px')
         $('.main-sec4-left-wrap .number-wrap2').css('top','-729px')
-        $('.main-sec4-right-wrap1 .number-wrap3').css('top',0).stop().animate({top:'-162px'},3000,'easeInOutCubic');
-        $('.main-sec4-right-wrap1 .number-wrap4').css('top',0).stop().animate({top:'-729px'},3000,'easeInOutCubic');
-        $('.main-sec4-right-wrap2 .number-wrap5').css('top',0).stop().animate({top:'-648px'},3000,'easeInOutCubic');
-        $('.main-sec4-right-wrap2 .number-wrap6').css('top',0).stop().animate({top:'-324px'},3000,'easeInOutCubic');
-        $('.main-sec4-right-wrap2 .number-wrap7').css('top',0).stop().animate({top:'-810px'},3000,'easeInOutCubic');
+        $('.main-sec4-right-wrap1 .number-wrap3').css('top','-162px');
+        $('.main-sec4-right-wrap1 .number-wrap4').css('top','-729px');
+        $('.main-sec4-right-wrap2 .number-wrap5').css('top','-648px');
+        $('.main-sec4-right-wrap2 .number-wrap6').css('top','-324px');
+        $('.main-sec4-right-wrap2 .number-wrap7').css('top','-810px');
     }
 });
