@@ -38,3 +38,11 @@
     box-shadow: 0 0 30px #e0e0e0;
     border-radius: 20px;
 }
+@mixin btnImgSize($width, $height, $positionX, $positionY) {
+    background: url(../img/sp_common_v2.png) no-repeat;
+    background-size: 262px 217px;
+    width: #{$width}px;
+    height: #{$height}px;
+    background-position-x: #{$positionX}px;
+    background-position-y: #{$positionY}px;
+}

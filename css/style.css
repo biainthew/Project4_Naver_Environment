@@ -40,10 +40,12 @@ body {
 }
 .header-logo a {
   display: block;
-  width: 145px;
-  height: 28px;
   background: url(../img/sp_common_v2.png) no-repeat;
   background-size: 262px 217px;
+  width: 145px;
+  height: 28px;
+  background-position-x: 0px;
+  background-position-y: 0px;
 }
 .header-share a {
   display: block;
@@ -51,7 +53,8 @@ body {
   background-size: 262px 217px;
   width: 28px;
   height: 28px;
-  background-position: 0 -190px;
+  background-position-x: 0px;
+  background-position-y: -190px;
 }
 
 .nav {
@@ -443,10 +446,11 @@ body {
 .main-sec2-graph .graph-wrap-number::after {
   content: "";
   background: url(../img/sp_common_v2.png) no-repeat;
-  background-position-y: -38px;
   background-size: 262px 217px;
   width: 47px;
   height: 61px;
+  background-position-x: 0px;
+  background-position-y: -38px;
   position: absolute;
   right: 5px;
   top: 20px;
@@ -511,11 +515,12 @@ body {
 }
 .main-sec3-video-wrap .mc3-text span {
   display: block;
-  width: 40px;
-  height: 40px;
   background: url(../img/sp_common_v2.png) no-repeat;
   background-size: 262px 217px;
-  background-position: -96px -99px;
+  width: 40px;
+  height: 40px;
+  background-position-x: -96px;
+  background-position-y: -99px;
   position: absolute;
   bottom: 40px;
 }
@@ -638,6 +643,9 @@ body {
   font-size: 16px;
   color: #444;
 }
+.main-sec5 {
+  height: 790px;
+}
 .main-sec5-text {
   margin-bottom: 70px;
   position: relative;
@@ -686,9 +694,146 @@ body {
 }
 .main-sec5-cont-box .mc5-icoGo {
   display: block;
-  width: 34px;
-  height: 34px;
   background: url(../img/sp_common_v2.png) no-repeat;
   background-size: 262px 217px;
+  width: 34px;
+  height: 34px;
+  background-position-x: 0px;
   background-position-y: -150px;
+}
+.main-sec6-text {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.main-sec6-text h4 {
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.main-sec6-text h1 {
+  font-size: 52px;
+  font-weight: bold;
+}
+.main-sec6-img {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #000;
+  border-radius: 30px;
+  color: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.main-sec6-img-left {
+  position: relative;
+}
+.main-sec6-img-left div h3 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.main-sec6-img-left div p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+.main-sec6-img-left-btn {
+  display: block;
+  background: url(../img/sp_common_v2.png) no-repeat;
+  background-size: 262px 217px;
+  width: 40px;
+  height: 40px;
+  background-position-x: -96px;
+  background-position-y: -99px;
+  position: absolute;
+  bottom: 0;
+}
+.main-sec6-img-right video {
+  width: 500px;
+}
+.main-sec6 .container2 {
+  margin-top: 100px;
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+.main-sec6-box3, .main-sec6-box4 {
+  margin-top: 30px;
+}
+.main-sec6-box3 h2, .main-sec6-box4 h2 {
+  font-size: 54px !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.main-sec6-box3 h2 .number, .main-sec6-box4 h2 .number {
+  overflow: hidden;
+  position: relative;
+  width: 40px;
+}
+.main-sec6-box3 h2 .number-wrap, .main-sec6-box4 h2 .number-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+.main-sec6-box3 h2::after, .main-sec6-box4 h2::after {
+  content: "";
+  position: absolute;
+  background: url(../img/sp_card_view.png) no-repeat;
+  background-size: 842px 629px;
+}
+.main-sec6-box3 p, .main-sec6-box4 p {
+  font-size: 16px;
+  text-align: center;
+}
+.main-sec6-box3 h2::after {
+  width: 307px;
+  height: 110px;
+  background-position: -407px -88px;
+}
+.main-sec6-box4 h2 {
+  margin-left: -60px;
+}
+.main-sec6-box4 h2::after {
+  width: 60px;
+  height: 75px;
+  background-position: -428px -410px;
+  right: 25%;
+}
+.main-sec6-box {
+  width: 49%;
+  box-shadow: 0 0 30px #e0e0e0;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.main-sec6-box h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 0 0 1px #000;
+  text-align: left;
+}
+.main-sec6-box p {
+  font-size: 20px;
+}
+.main-sec6-box img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.main-sec6-box > span {
+  background: url(../img/sp_common_v2.png) no-repeat;
+  background-size: 262px 217px;
+  width: 40px;
+  height: 40px;
+  background-position-x: -103px;
+  background-position-y: -33px;
 }/*# sourceMappingURL=style.css.map */

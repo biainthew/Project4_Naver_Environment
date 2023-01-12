@@ -274,6 +274,8 @@ $(window).scroll(function() {
         $('.main-sec4-left, .main-sec4-right').css('top', '100px');
     }
 })
+
+let s = true;
 $(window).scroll(function() {
     if ($(document).scrollTop() > 2380 && $(document).scrollTop() < 2820) {
         $('.main-sec4-left-wrap .number-wrap1').css('top', 0).stop().animate({
@@ -307,3 +309,11 @@ $(window).scroll(function() {
         $('.main-sec4-right-wrap2 .number-wrap7').css('top', '-810px')
     }
 });
+
+// mainsec6 number
+let numberWrap = $('.main-sec6-box number-wrap');
+$(window).scroll(function(){
+    if($(window).scrollTop()>5515){
+        $('.main-sec6-box number-wrap11').css('top',0).stop().animate({top:'-450px'})
+    }
+})
