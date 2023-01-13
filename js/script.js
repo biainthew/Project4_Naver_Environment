@@ -322,13 +322,13 @@ $(window).scroll(function(){
 
 // mainsec6 number
 let main6COT = $('.main-sec6 .container2').offset().top;
-$(window).scroll(function(){
-    if($(window).scrollTop()>=main6OT){
-        $('.main-sec6-box .number-wrap').addClass('addParallax')
-    }else{
-        $('.main-sec6-box .number-wrap').removeClass('addParallax')
-    }
-})
+// $(window).scroll(function(){
+//     if($(window).scrollTop()>=main6OT){
+//         $('.main-sec6-box .number-wrap').addClass('addParallax')
+//     }else{
+//         $('.main-sec6-box .number-wrap').removeClass('addParallax')
+//     }
+// })
 $(window).scroll(function(){
     if($(document).scrollTop() >= main6COT-num2){
         $('.main-sec6 .main-sec6-box1').stop().animate({top:0},500)
@@ -347,9 +347,11 @@ $(window).scroll(function(){
         setTimeout(function(){
             $('.main-sec6 .main-sec6-box4').stop().animate({top:0},500)
         },300)
+        $('.main-sec6-box .number-wrap').addClass('addParallax')
     }else{
         $('.main-sec6 .main-sec6-box3').css('top', '100px');
         $('.main-sec6 .main-sec6-box4').css('top', '100px');
+        $('.main-sec6-box .number-wrap').removeClass('addParallax')
     }
 })
 //main-sec7
