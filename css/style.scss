@@ -1,4 +1,5 @@
 @import "mixin";
+@import "keyframes";
 //공통속성
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
@@ -102,7 +103,7 @@ font-family:'NanumSquare',san-serif;
         height: 100vh;
         &-text{
             text-align: center;
-            @include scrollE;
+            // @include scrollE;
             h2{
                 @include largeTitle;
                 padding-top: 100px;
@@ -329,14 +330,14 @@ font-family:'NanumSquare',san-serif;
                         }
                     }
                     .number1{
-                        .number-wrap{
-                            height: 756px;
+                        .number-wrap.addParallax{
+                            animation: scrollNum8 2s forwards;
                         }
                         
                     }
                     .number2{
-                        .number-wrap{
-                            height: 1080px;
+                        .number-wrap.addParallax{
+                            animation: scrollNum11 2s forwards;
                         }
                     }
                     >span{
@@ -472,9 +473,9 @@ font-family:'NanumSquare',san-serif;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            @include scrollE;
             &-wrap1{
                 height: 48%;
+                @include scrollE;
                 h4{
                     margin-left: -27px;
                     &::after{
@@ -487,6 +488,7 @@ font-family:'NanumSquare',san-serif;
             }
             &-wrap2{
                 height: 48%;
+                @include scrollE;
                 h4{
                     margin-left: -27px;
                     &::after{
@@ -524,6 +526,13 @@ font-family:'NanumSquare',san-serif;
                         position: absolute;
                         top: 0;
                     }
+                    &-wrap1.addParallax{animation: scrollNum2 2s forwards;}
+                    &-wrap2.addParallax{animation: scrollNum9 2s forwards;}
+                    &-wrap3.addParallax{animation: scrollNum2 2s forwards;}
+                    &-wrap4.addParallax{animation: scrollNum9 2s forwards;}
+                    &-wrap5.addParallax{animation: scrollNum8 2s forwards;}
+                    &-wrap6.addParallax{animation: scrollNum4 2s forwards;}
+                    &-wrap7.addParallax{animation: scrollNum10 2s forwards;}
                 }
                 
                 &:after{
@@ -540,7 +549,7 @@ font-family:'NanumSquare',san-serif;
         }
     }
     &-sec5{
-        height: 790px;
+        padding-bottom: 50px;
         &-text{
             margin-bottom: 70px;
             @include scrollE;
@@ -587,7 +596,9 @@ font-family:'NanumSquare',san-serif;
         }
     }
     &-sec6{
+        padding-bottom: 100px;
         &-text{
+            @include scrollE;
             margin-top: 20px;
             margin-bottom: 70px;
             text-align: center;
@@ -603,6 +614,7 @@ font-family:'NanumSquare',san-serif;
             }
         }
         &-img{
+            @include scrollE;
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -642,6 +654,9 @@ font-family:'NanumSquare',san-serif;
             gap: 2%;
             flex-wrap: wrap;
         }
+        &-box{
+            @include scrollE;
+        }
         &-box3,&-box4{
             margin-top: 30px;
             h2{
@@ -661,6 +676,12 @@ font-family:'NanumSquare',san-serif;
                         position: absolute;
                         top: 0;
                     }
+                    &-wrap11.addParallax{animation: scrollNum6 2s forwards;}
+                    &-wrap12.addParallax{animation: scrollNum3 2s forwards;}
+                    &-wrap13.addParallax{animation: scrollNum10 2s forwards;}
+                    &-wrap14.addParallax{animation: scrollNum1 2s forwards;}
+                    &-wrap15.addParallax{animation: scrollNum8 2s forwards;}
+                    &-wrap16.addParallax{animation: scrollNum2 2s forwards;}
                 }
             }
             h2::after{
@@ -716,6 +737,186 @@ font-family:'NanumSquare',san-serif;
             }
             >span{
                 @include btnImgSize(40,40,-103,-33);
+            }
+        }
+    }
+    &-sec7{
+        &-text{
+            @include scrollE;
+            margin-bottom: 80px;
+            h4{
+                @include smallTitle;
+                margin-bottom: 20px;
+            }
+            h1{
+                @include largeTitle;
+            }
+        }
+        &-cont{
+            display: flex;
+            justify-content: space-between;
+            height: 544px;
+            &-left{
+                @include scrollE;
+                @include boxShadow;
+                width: 49%;
+                height: 100%;
+                padding: 40px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                p{
+                    font-size: 34px;
+                    color: #fff;
+                    font-weight: bold;
+                }
+                span{
+                    @include btnImgSize(40,40,-96,-99);
+                    display: block;
+                }
+            }
+            &-right{
+                width: 49%;
+                &-top{
+                    @include scrollE;
+                    @include boxShadow;
+                    height: 48%;
+                    margin-bottom: 4%;
+                    padding: 40px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 20px;
+                    h4{
+                        font-size: 40px;
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                        position: relative;
+                        .number{
+                            font-size: 54px;
+                            overflow: hidden;
+                            width: 40px;
+                            height: 81px;
+                            &-wrap{
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            &-wrap21.addParallax{animation: scrollNum3 2s forwards;}
+                            &-wrap22.addParallax{animation: scrollNum3 2s forwards;}
+                            &-wrap23.addParallax{animation: scrollNum9 2s forwards;}
+                            &-wrap24.addParallax{animation: scrollNum8 2s forwards;}
+                            &-wrap25.addParallax{animation: scrollNum9 2s forwards;}
+                            &-wrap26.addParallax{animation: scrollNum1 2s forwards;}
+                            &-wrap27.addParallax{animation: scrollNum2 2s forwards;}
+                            &-wrap28.addParallax{animation: scrollNum3 2s forwards;}
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                        color: #444;
+                        text-align: center
+                    }
+                }
+                &-bottom{
+                    @include scrollE;
+                    @include boxShadow;
+                    height: 48%;
+                    padding: 40px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        font-size: 34px;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                    span{
+                        @include btnImgSize(40,40,-96,-99);
+                        display: block;
+                    }
+                }
+            }
+        }
+        &-cont1{
+            margin-bottom: 28px;
+            .main-sec7-cont-left{
+                background: url(../img/bg_card_view_01.png) no-repeat;
+                background-size: 583px 544px;
+            }
+            .main-sec7-cont-right-top h4{
+                margin-left: -50px;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background: url(../img/sp_card_view.png) no-repeat;
+                    background-size: 842px 629px;
+                    background-position: -733px -203px;
+                    width: 60px;
+                    height: 75px;
+                    right: 55px;
+                    top: -5px;
+                }
+            }
+            .main-sec7-cont-right-bottom{
+                background: url(../img/bg_card_view_03.png) no-repeat;
+                background-size: 583px 260px;
+            }
+        }
+        &-cont2{
+            .main-sec7-cont-left{
+                overflow: hidden;
+                video{
+                    height: 544px;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 20px;
+                    z-index: -1;
+                }
+            }
+            .main-sec7-cont-right-top h4{
+                margin-left: -50px;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background: url(../img/sp_card_view.png) no-repeat;
+                    background-size: 842px 629px;
+                    background-position: -667px -203px;
+                    width: 61px;
+                    height: 75px;
+                    right: 95px;
+                }
+            }
+            .main-sec7-cont-right-bottom{
+                text-align: center;
+                h2{
+                    font-size: 46px;
+                    font-weight: bold;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        background: url(../img/sp_card_view.png) no-repeat;
+                        background-size: 842px 629px;
+                        background-position: -407px -288px;
+                        width: 340px;
+                        height: 58px;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                p{
+                    color: #444;
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
             }
         }
     }
